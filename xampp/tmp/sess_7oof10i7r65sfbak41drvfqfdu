@@ -1,0 +1,4 @@
+ PMA_token |s:32:"3a6f275c6670212c5f6f6243335e347e"; HMAC_secret |s:16:"zI<xR&70nQ5j|bVt";browser_access_time|a:1:{s:7:"default";i:1643830338;}Import_message|a:1:{s:7:"message";s:380:"<div class="alert alert-danger" role="alert"><h1>Error</h1><p>
+    <strong>MySQL said: </strong><a href="./url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F5.7%2Fen%2Fserver-error-reference.html" target="mysql_doc"><img src="themes/dot.gif" title="Documentation" alt="Documentation" class="icon ic_b_help"></a>
+</p>
+<code>Cannot connect: invalid settings.</code><br></div>";}errors|a:0:{}
