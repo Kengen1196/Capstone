@@ -1,0 +1,116 @@
+8:17:14 PM  [main] 	Initializing Control Panel
+8:17:14 PM  [main] 	Windows Version:  Enterprise  64-bit
+8:17:14 PM  [main] 	XAMPP Version: 8.1.2
+8:17:14 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+8:17:14 PM  [main] 	You are not running with administrator rights! This will work for
+8:17:14 PM  [main] 	most application stuff but whenever you do something with services
+8:17:14 PM  [main] 	there will be a security dialogue or things will break! So think 
+8:17:14 PM  [main] 	about running this application with administrator rights!
+8:17:14 PM  [main] 	XAMPP Installation Directory: "c:\users\kndar\onedrive\documents\github\capstone\xampp\"
+8:17:14 PM  [main] 	Checking for prerequisites
+8:17:15 PM  [main] 	All prerequisites found
+8:17:15 PM  [main] 	Initializing Modules
+8:17:15 PM  [Apache] 	Problem detected!
+8:17:15 PM  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 21016!
+8:17:15 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+8:17:15 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:15 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+8:17:15 PM  [Apache] 	Problem detected!
+8:17:15 PM  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 21016!
+8:17:15 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+8:17:15 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:15 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+8:17:15 PM  [mysql] 	Problem detected!
+8:17:15 PM  [mysql] 	Port 3306 in use by "Unable to open process"!
+8:17:15 PM  [mysql] 	MySQL WILL NOT start without the configured ports free!
+8:17:15 PM  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:15 PM  [mysql] 	or reconfigure MySQL and the Control Panel to listen on a different port
+8:17:15 PM  [main] 	Starting Check-Timer
+8:17:15 PM  [main] 	Control Panel Ready
+8:17:17 PM  [Apache] 	Problem detected!
+8:17:17 PM  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 21016!
+8:17:17 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+8:17:17 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:17 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+8:17:17 PM  [Apache] 	Problem detected!
+8:17:17 PM  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 21016!
+8:17:17 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+8:17:17 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:17 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+8:17:17 PM  [Apache] 	Attempting to start Apache app...
+8:17:17 PM  [Apache] 	Status change detected: running
+8:17:18 PM  [Apache] 	Status change detected: stopped
+8:17:18 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+8:17:18 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+8:17:18 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+8:17:18 PM  [Apache] 	Press the Logs button to view error logs and check
+8:17:18 PM  [Apache] 	the Windows Event Viewer for more clues
+8:17:18 PM  [Apache] 	If you need more help, copy and post this
+8:17:18 PM  [Apache] 	entire log window on the forums
+8:17:32 PM  [Apache] 	Problem detected!
+8:17:32 PM  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 21016!
+8:17:32 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+8:17:32 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:32 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+8:17:32 PM  [Apache] 	Problem detected!
+8:17:32 PM  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 21016!
+8:17:32 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+8:17:32 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+8:17:32 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+8:17:32 PM  [Apache] 	Attempting to start Apache app...
+8:17:33 PM  [Apache] 	Status change detected: running
+8:17:34 PM  [Apache] 	Status change detected: stopped
+8:17:34 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+8:17:34 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+8:17:34 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+8:17:34 PM  [Apache] 	Press the Logs button to view error logs and check
+8:17:34 PM  [Apache] 	the Windows Event Viewer for more clues
+8:17:34 PM  [Apache] 	If you need more help, copy and post this
+8:17:34 PM  [Apache] 	entire log window on the forums
+9:27:29 PM  [Apache] 	Problem detected!
+9:27:29 PM  [Apache] 	Port 80 in use by "C:\xampp\apache\bin\httpd.exe" with PID 22436!
+9:27:29 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+9:27:29 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+9:27:29 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+9:27:29 PM  [Apache] 	Problem detected!
+9:27:29 PM  [Apache] 	Port 443 in use by "C:\xampp\apache\bin\httpd.exe" with PID 22436!
+9:27:29 PM  [Apache] 	Apache WILL NOT start without the configured ports free!
+9:27:29 PM  [Apache] 	You need to uninstall/disable/reconfigure the blocking application
+9:27:29 PM  [Apache] 	or reconfigure Apache and the Control Panel to listen on a different port
+9:27:29 PM  [Apache] 	Attempting to start Apache app...
+9:27:30 PM  [Apache] 	Status change detected: running
+9:27:30 PM  [Apache] 	Status change detected: stopped
+9:27:30 PM  [Apache] 	Error: Apache shutdown unexpectedly.
+9:27:30 PM  [Apache] 	This may be due to a blocked port, missing dependencies, 
+9:27:30 PM  [Apache] 	improper privileges, a crash, or a shutdown by another method.
+9:27:30 PM  [Apache] 	Press the Logs button to view error logs and check
+9:27:30 PM  [Apache] 	the Windows Event Viewer for more clues
+9:27:30 PM  [Apache] 	If you need more help, copy and post this
+9:27:30 PM  [Apache] 	entire log window on the forums
+10:04:32 PM  [main] 	Deinitializing Modules
+10:04:32 PM  [main] 	Deinitializing Control Panel
+
+10:09:14 PM  [main] 	Initializing Control Panel
+10:09:14 PM  [main] 	Windows Version:  Enterprise  64-bit
+10:09:14 PM  [main] 	XAMPP Version: 8.1.2
+10:09:14 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+10:09:14 PM  [main] 	You are not running with administrator rights! This will work for
+10:09:14 PM  [main] 	most application stuff but whenever you do something with services
+10:09:14 PM  [main] 	there will be a security dialogue or things will break! So think 
+10:09:14 PM  [main] 	about running this application with administrator rights!
+10:09:14 PM  [main] 	XAMPP Installation Directory: "c:\users\kndar\onedrive\documents\github\capstone\xampp\"
+10:09:14 PM  [main] 	Checking for prerequisites
+10:09:14 PM  [main] 	All prerequisites found
+10:09:14 PM  [main] 	Initializing Modules
+10:09:14 PM  [mysql] 	Problem detected!
+10:09:14 PM  [mysql] 	Port 3306 in use by "Unable to open process"!
+10:09:14 PM  [mysql] 	MySQL WILL NOT start without the configured ports free!
+10:09:14 PM  [mysql] 	You need to uninstall/disable/reconfigure the blocking application
+10:09:14 PM  [mysql] 	or reconfigure MySQL and the Control Panel to listen on a different port
+10:09:15 PM  [main] 	Starting Check-Timer
+10:09:15 PM  [main] 	Control Panel Ready
+10:09:16 PM  [Apache] 	Attempting to start Apache app...
+10:09:17 PM  [Apache] 	Status change detected: running
+10:22:54 PM  [main] 	Deinitializing Modules
+10:22:54 PM  [main] 	Deinitializing Control Panel
+
