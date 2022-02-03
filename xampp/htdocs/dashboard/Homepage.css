@@ -1,0 +1,73 @@
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'nav nav'
+    'ani ani'
+    'for for'
+    'ad1 ad2'
+    'chat chat';
+    background-color: #2196F3;
+  }
+
+.item1{grid-area: nav;
+    text-align: center;
+    vertical-align: middle;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("demonSlayer.jpg");
+    background-size: cover;
+  }
+.item2{grid-area: ani;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(11, 1, 105);}
+.item3{grid-area: for;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(107, 126, 2);}
+.item4{grid-area: ad1;
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    background-color:rgb(135, 0, 139);}
+.item5{grid-area: ad2;
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    background-color:rgb(182, 112, 0);}
+.item6{grid-area: chat;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(112, 0, 107);}
+
+/*This is for the navigation  */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
