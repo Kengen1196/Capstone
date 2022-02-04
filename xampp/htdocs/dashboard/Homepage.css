@@ -2,45 +2,58 @@
 .grid-container {
     display: grid;
     grid-template-areas:
-    'nav nav'
-    'ani ani'
-    'for for'
-    'ad1 ad2'
-    'chat chat';
+    'box1 box1'
+    'box2 box2'
+    'box3 box3'
+    'box4 box5'
+    'box6 box6';
     background-color: #2196F3;
     margin-left: -1vh;
     margin-right: -1vh;
   }
 
-.item1{grid-area: nav;
+
+.title{grid-area: box1;
     text-align: center;
     vertical-align: middle;
     height: 100vh;
-    background-image: url("demonSlayer.jpg");
-    background-size: contain;
+    background-image: url("anisenpai.PNG");
+    background-size: cover;
   }
-.item2{grid-area: ani;
+
+.item2{grid-area: box2;
     text-align: center;
     height: 100vh;
-    background-color:rgb(11, 1, 105);}
-.item3{grid-area: for;
+    background-color:rgb(11, 1, 105);
+    background-image: url("animeList.PNG");
+    background-size: cover;}
+
+.forum{grid-area: box3;
     text-align: center;
     height: 100vh;
-    background-color:rgb(107, 126, 2);}
-.item4{grid-area: ad1;
+    background-image: url("Forum.png");
+    background-size: cover;
+  }
+
+.item4{grid-area: box4;
     text-align: center;
     height: 50vh;
     background-image: url("funimation.jfif");
     background-size: cover;}
-.item5{grid-area: ad2;
+
+.item5{grid-area: box5;
     text-align: center;
     height: 50vh;
     background-image: url("Crunchyroll.jpg");
     background-size:cover;}
-.item6{grid-area: chat;
+
+.item6{grid-area: box6;
     text-align: center;
-    height: 50vh;
-    background-color:rgb(112, 0, 107);}
+    height: 100vh;
+    background-image: url("Chat\ BBox.gif");
+    background-size: cover;
+
+}
 
 /*This is for the navigation  */
 ul {
@@ -73,5 +86,44 @@ li a:hover:not(.active) {
 }
 
 .AniSenpai{
-  margin-left: 50vw;
+  margin-left: 47vw;
 }
+
+
+/* Slide Show*/
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+
+ /* Forum */
+/*
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+*/
