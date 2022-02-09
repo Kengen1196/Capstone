@@ -21,7 +21,7 @@
     background-size: cover;
   }
 
-.item2{grid-area: box2;
+.animeList{grid-area: box2;
     text-align: center;
     height: 100vh;
     background-color:rgb(11, 1, 105);
@@ -35,19 +35,19 @@
     background-size: cover;
   }
 
-.item4{grid-area: box4;
+.ad1{grid-area: box4;
     text-align: center;
     height: 50vh;
     background-image: url("funimation.jfif");
     background-size: cover;}
 
-.item5{grid-area: box5;
+.ad2{grid-area: box5;
     text-align: center;
     height: 50vh;
     background-image: url("Crunchyroll.jpg");
     background-size:cover;}
 
-.item6{grid-area: box6;
+.chat{grid-area: box6;
     text-align: center;
     height: 100vh;
     background-image: url("Chat\ BBox.gif");
