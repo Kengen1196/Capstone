@@ -17,7 +17,7 @@
     text-align: center;
     vertical-align: middle;
     height: 100vh;
-    background-image: url("anisenpai.PNG");
+    background-image: url("Images/anisenpai.PNG");
     background-size: cover;
   }
 
@@ -25,32 +25,32 @@
     text-align: center;
     height: 100vh;
     background-color:rgb(11, 1, 105);
-    background-image: url("animeList.PNG");
+    background-image: url("Images/animeList.PNG");
     background-size: cover;}
 
 .forum{grid-area: box3;
     text-align: center;
     height: 100vh;
-    background-image: url("Forum.png");
+    background-image: url("Images/Forum.png");
     background-size: cover;
   }
 
 .ad1{grid-area: box4;
     text-align: center;
     height: 50vh;
-    background-image: url("funimation.jfif");
+    background-image: url("Images/funimation.jfif");
     background-size: cover;}
 
 .ad2{grid-area: box5;
     text-align: center;
     height: 50vh;
-    background-image: url("Crunchyroll.jpg");
+    background-image: url("Images/Crunchyroll.jpg");
     background-size:cover;}
 
 .chat{grid-area: box6;
     text-align: center;
     height: 100vh;
-    background-image: url("Chat\ BBox.gif");
+    background-image: url("Images/Chat\ BBox.gif");
     background-size: cover;
 
 }
