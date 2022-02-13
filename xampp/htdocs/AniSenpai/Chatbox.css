@@ -17,9 +17,10 @@
   }
    
   #wrapper{
-    margin: 0 auto;
+    margin: 0 0;
     padding-bottom: 25px;
-    background: #eee;
+    background-image: url("Images/chat.jpg");
+    opacity: 0.5;
     width: 100vw;
     height: 93vh;
     border: 2px solid #212121;
@@ -36,7 +37,6 @@
     margin: 0 auto;
     margin-bottom: 25px;
     padding: 10px;
-    background: #fff;
     height: 80vh;
     width: 95vw;
     border: 1px solid #a7a7a7;

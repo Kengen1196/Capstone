@@ -114,3 +114,25 @@
 10:22:54 PM  [main] 	Deinitializing Modules
 10:22:54 PM  [main] 	Deinitializing Control Panel
 
+6:51:05 PM  [main] 	Initializing Control Panel
+6:51:05 PM  [main] 	Windows Version:  Enterprise  64-bit
+6:51:05 PM  [main] 	XAMPP Version: 8.1.2
+6:51:05 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+6:51:05 PM  [main] 	You are not running with administrator rights! This will work for
+6:51:05 PM  [main] 	most application stuff but whenever you do something with services
+6:51:05 PM  [main] 	there will be a security dialogue or things will break! So think 
+6:51:05 PM  [main] 	about running this application with administrator rights!
+6:51:05 PM  [main] 	XAMPP Installation Directory: "c:\users\kndar\onedrive\documents\github\capstone\xampp\"
+6:51:05 PM  [main] 	Checking for prerequisites
+6:51:05 PM  [main] 	All prerequisites found
+6:51:05 PM  [main] 	Initializing Modules
+6:51:05 PM  [main] 	Starting Check-Timer
+6:51:05 PM  [main] 	Control Panel Ready
+6:51:07 PM  [Apache] 	Attempting to start Apache app...
+6:51:07 PM  [Apache] 	Status change detected: running
+10:40:17 PM  [Apache] 	Attempting to stop Apache (PID: 19124)
+10:40:17 PM  [Apache] 	Attempting to stop Apache (PID: 15148)
+10:40:17 PM  [Apache] 	Status change detected: stopped
+4:51:12 PM  [main] 	Deinitializing Modules
+4:51:12 PM  [main] 	Deinitializing Control Panel
+
