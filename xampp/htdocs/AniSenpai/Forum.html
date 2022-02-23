@@ -1,24 +1,55 @@
-<!--
-Ethan's work/assignment
-
-
 <!DOCTYPE html>
 <html>
+<head>
+
+  <link rel="stylesheet" href="Forum.css">
+  
+<title>Forum</title>
+</head>
 <body>
+<!-- 
+<h1><b>Forum</b></h1>
+-->
 
-<h2>HTML Forms</h2>
+  <!-- Navigation Bar-->
+  <ul>
+    <li><a href="Homepage.html">Home</a></li>
+    <li><a href="AnimeList.html">Anime</a></li>
+    <li><a href="Homepage.html#ad1">Sites</a></li>
+    <li><a href="Chatbox.html">Chat</a></li>
 
+    <div class="AniSenpai">
+      <li><a href="Homepage.html">AniSenpai</a></li>
+    </div>
+
+    <div class="Profile" style="float: right;">
+      <li><a href="profile.html">Profile</a></li>
+    </div>
+
+  </ul>
+
+<div class = "border">
+<div class =  "theForum"> 
 <form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+  <br><label for="animeTitle">Anime Title:</label><br>
+  <input type="text" id="animeTitle" name="animeTitle" value=""><br><br>
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+  
+  
+  <label for="upVote">Upvote</label> 
+  <input type="radio" id="upVote" name="voting" value="Upvote">
+
+  <label for="downVote">Downvote</label>
+  <input type="radio" id="downVote" name="voting" value="Downvote"><br><br>
+  
+  <label for="animeBox">Reasoning:</label><br>
+  <input type="explaination" id="animeBox" name="animeBox" value=""><br><br>
+  
+  <input type="submit" value="Submit">
+  
+</form> 
+</div>
+</div>
 
 </body>
 </html>
-
--->
