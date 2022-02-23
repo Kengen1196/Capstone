@@ -1,0 +1,110 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    z-index: 10;
+    }
+    
+    li {
+    float: left;
+    }
+    
+    li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+    background-color: #111;
+    }
+
+    .AniSenpai{
+        margin-left: 47vw;
+        }
+
+html{
+    background-color: #A9A9A9;
+    color:white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    object-position: center;
+}
+
+body{
+    padding-top: 40px;
+}
+
+.header{
+    background-image: url(Images/animeLibrary.PNG);
+    background-size: 100% 100%;
+    border: 1px solid;
+    height: 300px;
+}
+
+img{
+    vertical-align: middle;
+    width: 100px;
+    height: 150px;
+}
+
+table{
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid;
+    border-color: black;
+}
+
+td{
+    padding: 20px;
+    border: 1px solid;
+    border-color: #111;
+}
+
+.table-header{
+    background-color:	#00008B;
+}
+
+.odd-row{
+    background-color: #A9A9A9;
+}
+.even-row{
+    background-color: #451340;
+}
+
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width:600px;
+    height: fit-content;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    font-size: small;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .genre{
+      text-align: left;
+      font-size: small;
+  }
+    

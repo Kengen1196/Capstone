@@ -5,7 +5,8 @@
   'box1 box1'
   'box2 box2'
   'box3 box3'
-  'box4 box5'
+  'box4 box4'
+  'box5 box5'
   'box6 box6';
   background-color: #2196F3;
 
@@ -13,9 +14,11 @@
   margin-right: -1vh;
 }
 
+
 img{
-  height:100vh;
-  width:100vw;
+  height:100%;
+  width:100%;
+  object-fit: cover;
 }
 
 
@@ -23,7 +26,6 @@ img{
   text-align: center;
   vertical-align: middle;
   height: 100vh;
-  background-size: cover;
 }
 
 
@@ -31,35 +33,48 @@ img{
 .animeList{grid-area: box2;
   text-align: center;
   height: 100vh;
-  background-color:rgb(11, 1, 105);
-  background-image: url("Images/animeList.PNG");
-  background-size: cover;}
+}
 
 .forum{grid-area: box3;
   text-align: center;
   height: 100vh;
-  background-image: url("Images/Forum.png");
-  background-size: cover;
 }
 
-.ad1{grid-area: box4;
-  text-align: center;
-  height: 50vh;
-  background-image: url("Images/funimation.jfif");
-  background-size: cover;}
+.ad-container{
+  grid-area: box5;
+  display: grid;
+  grid-template-areas: 
+    'ad1 ad2'
+    'ad3 ad4';
+}
 
-.ad2{grid-area: box5;
+.ad1{grid-area: ad1;
   text-align: center;
+  width: 50vw;
   height: 50vh;
-  background-image: url("Images/Crunchyroll.jpg");
-  background-size:cover;}
+}
+
+.ad2{grid-area: ad2;
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+}
+
+.ad3{grid-area: ad3;
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+}
+
+.ad4{grid-area: ad4;
+  text-align: center;
+  width: 50vw;
+  height: 50vh;
+}
 
 .chat{grid-area: box6;
   text-align: center;
   height: 100vh;
-  background-image: url("Images/Chat\ BBox.gif");
-  background-size: cover;
-
 }
 
 /*This is for the navigation  */

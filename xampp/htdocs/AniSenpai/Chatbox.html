@@ -6,11 +6,51 @@
         <title>WeebChat</title>
     </head>
     <body>
-        <div id="wrapper">
+        <div class="navBar">
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="AnimeList.html">Anime</a></li>
+                <li><a href="#forum">Forum</a></li>
+                <li><a href="Homepage.html#ad1">Sites</a></li>
+                
+                <div class="AniSenpai">
+                    <li><a href="#AniSenpai">AniSenpai</a></li>
+                </div>
+        
+                <div class="Profile" style="float: right;">
+                    <li><a href="#profile">Profile</a></li>
+                </div>
+        
+            </ul>
+        </div>
+
+        <div id="container">
             <div id="title">
-                <h1 id="title">WeebChat</h1>
+                <h1 class="title">Weeb Social</h1>
             </div>
-            <div id="chatbox"></div>
+            <div class="chatbox">
+                <div class="channels">
+                    <h2>Channels</h2>
+                    <ul>
+                        <li>
+                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 1</button>
+                        </li>
+                        <li>
+                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 2</button>
+                        </li>
+                        <li>
+                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 3</button>
+                        </li>
+                        <li>
+                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 4</button>
+                        </li>
+                        <li>
+                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 5</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chat"></div>
+            </div>
  
             <form name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" />
