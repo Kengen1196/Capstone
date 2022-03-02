@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    color: white;
+  }
+   
+  body {
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;   
+    width: 100vw;
+    height: 95vh;
+    padding-top: 20px;
+  }
+   
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   
+  #container{
+    margin: 0 0;
+    padding-bottom: 25px;
+    background-image: url("Images/chat.jpg");
+    opacity: 1;
+    width: 100vw;
+    height: 96vh;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+
+  .title{
+      text-align: center;
+  }
+
+   
+  .chatbox {
+    display: grid;
+    grid-template-areas:
+    'channels chat';
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    height: 75vh;
+    width: 95vw;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  .channels{
+    text-align: center;
+    border: 2px solid;
+    width:15vw
+  }
+   
+  #usermsg {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+  }
+
+  #submitmsg{
+    background: #ff9800;
+    border: 2px solid #e65100;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+
+  .navBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 10;
+    }
+    
+    .navBar ul li {
+    float: left;
+    }
+    
+    .navBar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+    background-color: #111;
+    }
+
+    .AniSenpai{
+      margin-left: 47vw;
+      }
+
+    .channels h2{
+      padding-top:25px;
+    }
+    .channels ul{
+      list-style-type: none;
+      overflow: hidden;
+      padding-top: 30px;
+    }
+    .channels ul li{
+      border: 1px solid black;
+    }
+
+    .channels button {
+      background-color: inherit;
+      color: white;
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 30px;
+    }
+
+    .chat{
+      width:78vw;
+      border:2px solid white;
+    }
+
+

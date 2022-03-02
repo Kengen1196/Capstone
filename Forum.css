@@ -1,0 +1,111 @@
+body  {
+  background-image: url("Images/coffee.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+
+.theForum {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  
+
+}
+
+input[type=explaination] {
+  width: 80%;
+  height: 150px;
+  padding: 30px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 10px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+.border {
+  border: 2px solid darkgrey;
+  /*background-color: lightgrey;*/
+  border-radius: 50px ;
+  margin-left: 500px;
+  margin-right: 500px;
+  height: 420px;
+  margin-top: 85px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #333;
+}
+
+.Forum{
+  margin-left: 47vw;
+  font-size: 20px;
+  }
+
+  /*Navigation Bar */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 101vw;
+    margin-left: -1vw;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .AniSenpai{
+    margin-left: 47vw;
+  }
