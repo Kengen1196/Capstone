@@ -17,8 +17,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <link rel="stylesheet" href="Homepage.css">
     <title>AniSenpai</title>
     <script type="text/javascript"></script>
-
-
 </head>
 
 
@@ -27,24 +25,29 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 <body>
 
     <!-- Navigation Bar-->
-    <ul>
-        <li><a href="#title">Home</a></li>
-        <li><a href="#animeList">Anime</a></li>
-        <li><a href="#forum">Forum</a></li>
-        <li><a href="#ad1">Sites</a></li>
-        <li><a href="#chat">Chat</a></li>
-        
-        <div class="AniSenpai">
-            <li><a href="#AniSenpai">AniSenpai</a></li>
-        </div>
 
-        <div class="Profile" style="float: right;">
-            <li><a href="login.php">Profile</a></li>
-        </div>
-
-    </ul>
+    <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Profile
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="reset-password.php">Reset Passowrd</a>
+        <a href="logout.php">Logout</a>
+      </div>
+    </div>
+    <a href="#animeList">Anime</a>
+    <a href="#forum">Forum</a>
+    <a href='#ads'>Sites</a>
+    <a href="#chat">Chat</a>
     
-    <!--Link containers-->
+    <div class="AniSenpai">
+      <li><a href=homepage.php>AniSenpai</a></li>
+    </div>
+
+
+
+  </div><!--Link containers-->
     <div class="grid-container">
         
         <div class="title">
@@ -68,13 +71,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 
                 </div>
         </div>
-        <div class="animeList">
-          <a href="AnimeList.html"><img alt="" src="Images/animeList.PNG" width="100vw"; height="100vw"/></a>
-        </div>
-        <div class="forum" id="forum">  
-          <a href="Forum.html"><img alt="" src="Images/Forum.png" width="100vw"; height="100vw"/></a>
-        </div>
-        <div class="ads">
+        <a id='animeList' href="AnimeList.php"><img alt="" src="Images/animeList.PNG" width="100vw"; height="100vw"/></a>
+        <a id='forum' href="Forum.php"><img alt="" src="Images/Forum.png" width="100vw"; height="100vw"/> </a> 
+        <a id='ads'>
           <div class="ad-container">
             <div class="ad1">
               <a href="https://www.funimation.com/"><img alt="" src="Images/funimation.jfif" width="100%"; height="100%"/></a>
@@ -89,10 +88,10 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
               <a href="https://www.amazon.com/Prime-Video-Anime-Movies-TV/s?rh=n%3A2858778011%2Cp_n_theme_browse-bin%3A2650364011"><img alt="" src="Images/amazon.jpg" width="100%"; height="100%"/></a>
             </div>
           </div>
-        </div>
-        <div class="chat">
-          <a href="Chatbox.html"><img alt="" src="Images/Chat BBox.gif" width="100vw"; height="100vw"/></a>
-        </div>
+          </a>
+          <a id='chat'>
+          <a href="Chatbox.php"><img alt="" src="Images/Chat BBox.gif" width="100vw"; height="100vw"/></a>
+          </a>
     </div>
 
     <script>

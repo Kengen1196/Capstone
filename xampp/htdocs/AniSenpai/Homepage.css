@@ -2,12 +2,12 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-  'box1 box1'
-  'box2 box2'
-  'box3 box3'
-  'box4 box4'
-  'box5 box5'
-  'box6 box6';
+  'box1'
+  'box2'
+  'box3'
+  'box4'
+  'box5'
+  'box6';
   background-color: #2196F3;
 
   margin-left: -1vh;
@@ -30,7 +30,7 @@ img{
 
 
 
-.animeList{grid-area: box2;
+#animeList{grid-area: box2;
   text-align: center;
   height: 100vh;
 }
@@ -77,37 +77,79 @@ img{
   height: 100vh;
 }
 
-/*This is for the navigation  */
-ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333;
-position: fixed;
-top: 0;
-width: 100vw;
-margin-left: -1vw;
-margin-right: -1vw;
-z-index: 10;
+
+/*New Nav bar css */
+.navbar {
+  overflow:visible;
+  background-color: #333;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  margin-left: -1vw;
+  margin-right: -1vw;
+  z-index: 10;
 }
 
-li {
-float: left;
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+.dropdown {
+  overflow:hidden;
+  float:left;
+  
 }
 
-li a:hover:not(.active) {
-background-color: #111;
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
 }
 
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .AniSenpai{
 margin-left: 47vw;
 }
