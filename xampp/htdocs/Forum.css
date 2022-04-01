@@ -1,0 +1,177 @@
+html  {
+  background-image: url("Images/coffee.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.theForum {
+  text-align: center;
+  color: white;
+  font-size: 19px;
+  
+
+}
+
+input[type=explaination] {
+  width: 80%;
+  height: 70px;
+  padding: 30px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 80%;
+  padding: 10px 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+
+.border {
+  border: 2px solid darkgrey;
+  /*background-color: lightgrey;*/
+  border-radius: 50px ;
+  margin-left: 500px;
+  margin-right: 500px;
+  height: 350px;
+  margin-top: 85px;
+}
+
+.borderForSubmitButton {
+  border: 2px solid darkgrey;
+  background-color: #cccccc;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-decoration: none;
+}
+
+.borderForThanks {
+  border: 2px solid darkgrey;
+  background-color: #cccccc;
+  border-radius: 50px ;
+  margin-left: 500px;
+  margin-right: 500px;
+  height: 100px;
+  margin-top: 85px;
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #333;
+}
+
+.Forum{
+  margin-left: 47vw;
+  font-size: 20px;
+  }
+
+ /*New Nav bar css */
+/*Navigation Bar */
+.navbar {
+  overflow:visible;
+  background-color: #333;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 101vw;
+  margin-left: -1vw;
+  margin-right: -1vw;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow:hidden;
+  float:left;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.AniSenpai{
+margin-left: 47vw;
+}

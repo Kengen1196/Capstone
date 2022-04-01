@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    color: white;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  .dropdown-content {
+    display:none;
+    position:absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .AniSenpai{
+  margin-left: 47vw;
+  }
+  
+   
+  body {
+    margin: 10px auto;
+    font-family: "Lato";
+    font-weight: 300;   
+    width: 100vw;
+    height: 100vh;
+  }
+   
+  form {
+    display: flex;
+    gap: 10px;
+  }
+   
+  #container{
+    margin: 0 0;
+    padding-bottom: 25px;
+    background-image: url("Images/chat.jpg");
+    opacity: 1;
+    width: 100vw;
+    height: 96vh;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+
+  .title{
+      text-align: center;
+  }
+
+   
+  .chatbox {
+    display: grid;
+    grid-template-areas:
+    'channels chat';
+    text-align: left;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    height: 75vh;
+    width: 95vw;
+    border: 1px solid #a7a7a7;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  .channels{
+    text-align: center;
+    border: 2px solid;
+    width:15vw
+  }
+
+  footer{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+   
+  #Content {
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #submit{
+    background: #ff9800;
+    border: 2px solid #e65100;
+    padding: 4px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding-right: 10;
+  }
+
+/*New Nav bar css */
+.navbar {
+  overflow:visible;
+  background-color: #333;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow:hidden;
+  float:left;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+    .channels{
+      margin: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .channels h2{
+      padding-top:25px;
+    }
+    .channels ul{
+      list-style-type: none;
+      overflow: hidden;
+      padding-top: 30px;
+    }
+    .channels ul li{
+      border: 1px solid black;
+    }
+
+    .channels button {
+      background-color: inherit;
+      color: white;
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 30px;
+    }
+
+    .chat{
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 5px;
+      width:77vw;
+      border:2px solid white;
+      overflow-y: scroll;
+    }
+
+    .message1{
+      color:#000;
+      margin-right:15px;
+      background-color:#6fbced;
+      line-height:20px;
+      max-width:90%;
+      border-radius:5px;
+      float:right;
+      clear:both;
+      padding-right: 5px;
+    }
+    
+    .message2{
+      padding:10px;
+      color:#000;
+      margin-left:15px;
+      background-color:#58b666;
+      line-height:20px;
+      max-width:90%;
+      display:inline-block;
+      text-align:left;
+      border-radius:5px;
+      clear:both
+    }
+
+    .message{
+      padding:10px;
+      color:#000;
+      margin-left:15px;
+      background-color:#58b666;
+      line-height:20px;
+      max-width:90%;
+      display:inline-block;
+      text-align:left;
+      border-radius:5px;
+      clear:both;
+  }
+
+    .triangle{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 8px 8px;
+      border-color: transparent transparent
+        #58b666 transparent;
+      margin-left:20px;
+      clear:both;
+  }
+
+    .triangle1{
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 8px 8px 8px;
+      border-color: transparent
+        transparent #6fbced transparent;
+      margin-right:20px;
+      float:right;
+      clear:both;
+  }
+
+  .triangle2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 8px 8px 8px;
+    border-color: transparent
+    transparent #58b666 transparent;
+    margin-left:20px;
+    clear:both
+}
+
+
