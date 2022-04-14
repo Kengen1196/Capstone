@@ -1,3 +1,15 @@
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
+
+
+
+
 <?php
 /* Database credentials. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */

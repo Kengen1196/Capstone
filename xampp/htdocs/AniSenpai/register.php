@@ -1,3 +1,14 @@
+
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
+
+
 <?php
 // Include config file
 require_once "config.php";

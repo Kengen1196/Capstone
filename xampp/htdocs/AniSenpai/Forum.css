@@ -99,6 +99,7 @@ li a:hover:not(.active) {
   }
 
  /*New Nav bar css */
+/*Navigation Bar */
 .navbar {
   overflow:visible;
   background-color: #333;
@@ -108,7 +109,7 @@ li a:hover:not(.active) {
   background-color: #333;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 101vw;
   margin-left: -1vw;
   margin-right: -1vw;
   z-index: 10;
@@ -170,7 +171,7 @@ li a:hover:not(.active) {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-  .AniSenpai{
-    margin-left: 47vw;
-  }
 
+.AniSenpai{
+margin-left: 47vw;
+}

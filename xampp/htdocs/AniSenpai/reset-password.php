@@ -1,3 +1,14 @@
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
+
+
+
 <?php
 // Initialize the session
 session_start();

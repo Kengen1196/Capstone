@@ -1,5 +1,14 @@
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
 
 
+<!-- Connect to the HTML and CSS page-->
 <!DOCTYPE html>
 <html>
 
@@ -13,19 +22,10 @@
 
 <body>
 
-  <!-- 
-<h1><b>Forum</b></h1>
--->
+   <!-- Navigation Bar to go back and forth between the various pages-->
 
-  <!-- Navigation Bar-->
-
-  <!-- Make the upvote and downvote as a int counter that uses javascript for it
-  So within phpMyAdmin, do the int variable and see how it works out from there. -->
-
-   <!-- Navigation Bar-->
-
-   <div class="navbar">
-   <div class="navbar">
+  
+  <div class="navbar">
     <div class="dropdown">
       <button class="dropbtn">Profile
         <i class="fa fa-caret-down"></i>
@@ -35,24 +35,20 @@
         <a href="logout.php">Logout</a>
       </div>
     <a href="Forum.php">Forum</a>
-    <a href="Hanimeage.php">Sites</a>
+    <a href="Homepage.php">Sites</a>
     <a href="Chatbox.php">Chat</a>
     
     <div class="AniSenpai">
       <li><a href="Homepage.php">AniSenpai</a></li>
     </div>
+
+  </div>
   <div class="border">
 
     <div class="theForum">
 
-      <!-- https://www.quora.com/How-do-I-create-a-database-that-stores-user-inputs-from-a-website 
-  
-  Reference this page for the get and post method 
-  You don't even have any php code, what if you have to include the php code within the body or another file that is dedicated to the php such as action_page.php?
-    
-  -->
-      <!-- After the user has submitted the form, it will go to testPage.php
-      What is the purpose of testTwo.php? -->
+     <!-- Form to post the user input -->
+     <!-- User input for the form by getting the title, upvote, downvote, and reasoning-->
       <form action="testTwo.php" method="POST">
 
         <br><label for="animeTitle">Anime Title:</label><br>
@@ -67,11 +63,9 @@
         <label for="animeBox">Reasoning:</label><br>
         <input type="explaination" id="animeBox" name="animeBox" value=""><br><br>
 
-        <!-- 
-  <div class = "borderForSubmitButton"> 
-  -->
+        <!-- Submit button that goes to a submission page-->
         <input type="submit" id="submitButton" name="submitButton" value="Submit">
-        <!-- <a href="ForumSubmit.html">Submit -->
+      
 
         </a>
 

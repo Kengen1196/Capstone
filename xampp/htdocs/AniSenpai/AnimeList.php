@@ -1,38 +1,52 @@
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Anime List</title>
-<script type="text/javascript"></script>
 <link rel="stylesheet" href="AnimeList.css">
 </head>
+</script>
 <body>
      <!-- Navigation Bar-->
-
-     <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">Profile
+   
+  <div class="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">Profile
         <i class="fa fa-caret-down"></i>
-      </button>
+        </button>
       <div class="dropdown-content">
-        <a href="reset-password.php">Reset Passowrd</a>
+        <a href="reset-password.php">Reset Password</a>
         <a href="logout.php">Logout</a>
       </div>
-    <a href="Forum.php">Forum</a>
-    <a href="Hanimeage.php">Sites</a>
-    <a href="Chatbox.php">Chat</a>
-    
-    <div class="AniSenpai">
-      <li><a href="Homepage.php">AniSenpai</a></li>
     </div>
 
+    <a href="AnimeList.php">Anime</a>
+    <a href="#forum">Forum</a>
+    <a href='#ads'>Sites</a>
+    <a href="#chat">Chat</a>
+    
+    <div class="AniSenpai">
+      <li><a href=homepage.php>AniSenpai</a></li>
+</div>
+  </div>
+
+  <form action="userSubmission.php" method="POST">
     <div class="container">
-        <?php
-              
+        <?php    
         $link = mysqli_connect("localhost","root", "", "anisenpai");      
         $query = "SELECT * FROM animelibrary";
-        $result1 = mysqli_query($link, $query);
-        $dataRow = "";
+        $result = mysqli_query($link, $query);
         ?>
 
         <table cellpadding="0" cellspacing="0" width="100%" class="animeList">
@@ -44,26 +58,27 @@
                 <td class="userScore">User Rating</td>
                 <td class="status">Status</td>
             </tr>
-            <?php while($row1 = mysqli_fetch_array($result1)):;?>
+            
+            <?php while($row = mysqli_fetch_array($result)):;?>
             <tr>
-                <td><?php echo $row1[0];?></td>
-                <td><img src= <?php echo "Images/".$row1[7];?>> 
-                    <div class="tooltip"><?php echo $row1[1];?>
+                <td><?php echo $row[0];?></td>
+                <td><img src= <?php echo "Images/".$row[7];?>> 
+                    <div class="tooltip"><?php echo $row[1];?>
                         <div class="genre">
-                            <p>Genres:<?php echo $row1[4];?>
+                            <p>Genres:<?php echo $row[4];?>
                            <br>
-                           Episodes:<?php echo $row1[3];?>
+                           Episodes:<?php echo $row[3];?>
                         </p>
                         </div>
                         <span class="tooltiptext">
-                            <?php echo $row1[5];?>
+                            <?php echo $row[5];?>
                         </span> 
                     </div>
                 </td>
-                <td><?php echo $row1[2];?></td>
+                <td><?php echo $row[2];?></td>
                 <td>
-                <select name="score" id="userScore">
-                    <option value="-">--</option>
+                <select onchange="this.form.submit()" name="score" id="userScore">
+                    <option value="">--</option>
                     <option value="10">10</option>
                     <option value="9">9</option>
                     <option value="8">8</option>
@@ -78,8 +93,8 @@
                   </select>
                 </td>
                 <td>
-                    <select name="watching" id="status">
-                    <option value="-">--</option>
+                    <select onchange="this.form.submit()" name="watching" id="status">
+                    <option value="">--</option>
                     <option value="watching">Watching</option>
                     <option value="stalled">Stalled</option>
                     <option value="completed">Completed</option>
@@ -89,9 +104,9 @@
                 </td>
             </tr>
             <?php endwhile;?>
-            <?php echo $dataRow;?>
-        <br><br>
-        </table>
+            </table>
     </div>
+    </form>
 </body>
-</html>
+
+  <html>

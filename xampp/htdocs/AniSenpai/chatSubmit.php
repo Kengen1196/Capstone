@@ -1,13 +1,22 @@
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
+
+
 <?php
 include_once 'chatSubmit.php';
 
-$Sender = $_POST['Sender'];
 $Content = $_POST['Content'];
-$Created = $_POST['Created'];
+$con = new mysqli($host, $user, $pass, $db_name);
 
-$sql =  " INSERT INTO chat (Sender, Content, Created)
-VALUES ('$User', '$Content', '$Created' );";
-mysqli_query($conn, $sql);
+$sql =  " INSERT INTO chat (Content)
+VALUES ('$Content' );";
+mysqli_query($con, $sql);
 
 header("Location:  ./Chatbox.php.php");
 ?>

@@ -1,3 +1,14 @@
+<!-- 
+Kevin Nguyen
+Le Phan
+Ethan Thao
+
+AniSenpai The Greatest Webpage
+
+-->
+
+
+
 <?php
 if (isset($_POST['submit'])){
       
@@ -44,22 +55,28 @@ if (isset($_POST['submit'])){
      <!-- Navigation Bar-->
 
      <div class="navbar">
-     <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">Profile
+      <div class="dropdown">
+        <button class="dropbtn">Profile
         <i class="fa fa-caret-down"></i>
-      </button>
+        </button>
       <div class="dropdown-content">
         <a href="reset-password.php">Reset Passowrd</a>
         <a href="logout.php">Logout</a>
       </div>
-    <a href="Forum.php">Forum</a>
-    <a href="Hanimeage.php">Sites</a>
-    <a href="Chatbox.php">Chat</a>
+    </div>
+    <a href="#animeList">Anime</a>
+    <a href="#forum">Forum</a>
+    <a href='#ads'>Sites</a>
+    <a href="#chat">Chat</a>
     
     <div class="AniSenpai">
-      <li><a href="Homepage.php">AniSenpai</a></li>
+      <li><a href=homepage.php>AniSenpai</a></li>
     </div>
+
+
+
+
+  </div>
 
     <div id="container">
             <div id="title">
@@ -174,7 +191,7 @@ if (isset($_POST['submit'])){
                 </div>
             </div>
             <footer>
-                <form name="input" action="chatSubmit.php">
+                <form action="Chatbox.php" method = "POST">
                     <input id = "Content" name="Content" type="text" id="Content" />
                     <input name="submit" type="submit" id="submit" value="Send" />
                 </form>
