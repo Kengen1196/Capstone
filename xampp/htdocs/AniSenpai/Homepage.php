@@ -50,7 +50,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
       </div>
     </div>
 
-    <a id='#animeList'>Anime</a>
+        <a href='#animeList'>Anime</a>
         <a href="#forum">Forum</a>
         <a href='#ads'>Sites</a>
         <a href="#chat">Chat</a>
@@ -86,16 +86,16 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 
             <!--This is the rest of the grid -->
             <div id="animeList">
-              <a id='animeList' href="AnimeList.php"><img alt="" src="Images/animeList.PNG" width="100vw"; height="100vh"/></a>
+              <a id='animeList' href="AnimeList.php"><img alt="" src="Images/animeList.PNG" style="width:100vw; height: 100vh;"></a>
             </div>
             <div id="forum">
-              <a id='forum' href="Forum.php"><img alt="" src="Images/Forum.png" width="100vw"; height="100vh"/> </a> 
+              <a id='forum' href="Forum.php"><img alt="" src="Images/Forum.png" style="width:100vw; height: 100vh;"> </a> 
             </div>
             <div id=ads>
               <a id='ads'>
                 <div class="ad-container">
                   <div class='ad1'>
-                    <a href="https://www.funimation.com/"><img alt="" src="Images/funimation.jfif" width="100%"; height="100%"/>
+                    <a href="https://www.funimation.com/"><img alt="" src="Images/funimation.jfif" width="100%"; height="100%">
                     </a>
                   </div>
                   <div class='ad2'>
@@ -112,7 +112,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
               </a>
             </div>
           <div id="chat">
-            <a id='chat' href="Chatbox.php"><img alt="" src="Images/Chat BBox.gif" width="100vw"; height="100vw"/>
+            <a id='chat' href="Chatbox.php"><img alt="" src="Images/Chat BBox.gif" style="width:100vw; height: 100vh;">
             </a>
           </div>
     </div>

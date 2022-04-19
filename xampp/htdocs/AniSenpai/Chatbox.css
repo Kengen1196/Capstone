@@ -5,6 +5,7 @@
   }
 
   html{
+    font-family: 'Times New Roman', Times, serif;
     color: white;
   }
 
@@ -193,15 +194,17 @@
     }
 
     .message1{
+      padding:10px;
       color:#000;
-      margin-right:15px;
+      margin-left:15px;
       background-color:#6fbced;
       line-height:20px;
       max-width:90%;
+      display:inline-block;
+      text-align:left;
       border-radius:5px;
       float:right;
       clear:both;
-      padding-right: 5px;
     }
     
     .message2{
@@ -216,30 +219,6 @@
       border-radius:5px;
       clear:both
     }
-
-    .message{
-      padding:10px;
-      color:#000;
-      margin-left:15px;
-      background-color:#58b666;
-      line-height:20px;
-      max-width:90%;
-      display:inline-block;
-      text-align:left;
-      border-radius:5px;
-      clear:both;
-  }
-
-    .triangle{
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 0 8px 8px 8px;
-      border-color: transparent transparent
-        #58b666 transparent;
-      margin-left:20px;
-      clear:both;
-  }
 
     .triangle1{
       width: 0;

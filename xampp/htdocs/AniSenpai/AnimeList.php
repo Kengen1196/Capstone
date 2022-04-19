@@ -30,11 +30,10 @@ AniSenpai The Greatest Webpage
         <a href="logout.php">Logout</a>
       </div>
     </div>
-
-    <a href="AnimeList.php">Anime</a>
-    <a href="#forum">Forum</a>
-    <a href='#ads'>Sites</a>
-    <a href="#chat">Chat</a>
+ 
+    <a href="Forum.php">Forum</a>
+    <a href='Homepage.php#ads'>Sites</a>
+    <a href="Chatbox.php">Chat</a>
     
     <div class="AniSenpai">
       <li><a href=homepage.php>AniSenpai</a></li>

@@ -10,6 +10,7 @@ AniSenpai The Greatest Webpage
 
 
 <?php
+session_start();
 if (isset($_POST['submit'])){
       
     $link = mysqli_connect("localhost",
@@ -22,13 +23,11 @@ if (isset($_POST['submit'])){
     }
        
     // Escape user inputs for security
-    $un= mysqli_real_escape_string(
-            $link, $_REQUEST['Sender']);
+    $un= $_SESSION["username"];
     $m = mysqli_real_escape_string(
             $link, $_REQUEST['Content']);
     date_default_timezone_set('America/North_Dakota/Center');
-    $ts = time();
-       
+    $ts = date("Y-m-d H:i:s");   
     // Attempt insert query execution
     $sql = "INSERT INTO chat (Sender, Content, Created)
                 VALUES ('$un', '$m', '$ts')";
@@ -64,10 +63,10 @@ if (isset($_POST['submit'])){
         <a href="logout.php">Logout</a>
       </div>
     </div>
-    <a href="#animeList">Anime</a>
-    <a href="#forum">Forum</a>
-    <a href='#ads'>Sites</a>
-    <a href="#chat">Chat</a>
+    <a href="AnimeList.php">Anime</a>
+    <a href="Forum.php">Forum</a>
+    <a href='Homepage.php#ads'>Sites</a>
+    <a href="Chatbox.php">Chat</a>
     
     <div class="AniSenpai">
       <li><a href=homepage.php>AniSenpai</a></li>
@@ -77,7 +76,6 @@ if (isset($_POST['submit'])){
 
 
   </div>
-
     <div id="container">
             <div id="title">
                 <h1 class="title">Weeb Social</h1>
@@ -127,12 +125,12 @@ if (isset($_POST['submit'])){
                          $i=0;
 
                          while($row = $run->fetch_array()) :
-                         if($i==0){
+                         if($row['Sender'] != $_SESSION['username']){
                          $i=5;
                          $first=$row;
                          ?>
-                         <div id="triangle1" class="triangle1"></div>
-                         <div id="message1" class="message1">
+                         <div id="triangle2" class="triangle2"></div>
+                         <div id="message2" class="message2">
                          <span style="color:white;float:right;">
                           <?php echo $row['Content']; ?>
                          </span> <br/>
@@ -148,11 +146,9 @@ if (isset($_POST['submit'])){
                          }
                         else
                         {
-                        if($row['Sender']!=$first['Sender'])
-                        {
                         ?>
-                         <div id="triangle" class="triangle"></div>
-                         <div id="message" class="message">
+                         <div id="triangle1" class="triangle1"></div>
+                         <div id="message1" class="message1">
                          <span style="color:white;float:left;">
                          <?php echo $row['Content']; ?></span> <br/>
                          <div>
@@ -166,25 +162,6 @@ if (isset($_POST['submit'])){
                         <br/><br/>
                         <?php
                         }
-                        else
-                        {
-                        ?>
-                         <div id="triangle1" class="triangle1"></div>
-                         <div id="message1" class="message1">
-                         <span style="color:white;float:right;">
-                         <?php echo $row['Content']; ?></span> <br/>
-                         <div>
-                          <span style="color:black;float:left;
-                                  font-size:10px;clear:both;">
-                            <?php echo $row['Sender']; ?>,
-                                <?php echo $row['Created']; ?>
-                          </span>
-                        </div>
-                        </div>
-                        <br/><br/>
-                        <?php
-                        }
-                        }
                         endwhile; ?>
                         </div>
                         </form>
@@ -192,8 +169,8 @@ if (isset($_POST['submit'])){
             </div>
             <footer>
                 <form action="Chatbox.php" method = "POST">
-                    <input id = "Content" name="Content" type="text" id="Content" />
-                    <input name="submit" type="submit" id="submit" value="Send" />
+                    <input id="Content" name="Content" type="text" />
+                    <input id="submit" name="submit" type="submit" value="Send" />
                 </form>
             </footer>
     </div>

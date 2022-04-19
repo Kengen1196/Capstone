@@ -165,7 +165,7 @@ margin-left: 47vw;
   height: 100vh;
 }
 
-#ad-container{
+.ad-container{
   grid-area: box4;
   display: grid;
   grid-template-areas: 
