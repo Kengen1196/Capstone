@@ -6,43 +6,87 @@
 
   html{
     font-family: 'Times New Roman', Times, serif;
-    color: white;
   }
 
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
+ /*New Nav bar css */
+.navbar {
+  overflow:visible;
+  background-color: #333;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  margin-right: -1vw;
+  z-index: 10;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  overflow:hidden;
+  float:left;
   
-  .dropdown-content {
-    display:none;
-    position:absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    
-  }
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
   
-  .dropdown-content a {
-    float: none;
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
   
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .AniSenpai{
-  margin-left: 47vw;
-  }
-  
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.AniSenpai{
+margin-left: 47vw;
+}
    
+
+
+
+
   body {
     margin: 10px auto;
     font-family: "Lato";
@@ -114,48 +158,6 @@
     border-radius: 4px;
     padding-right: 10;
   }
-
-/*New Nav bar css */
-.navbar {
-  overflow:visible;
-  background-color: #333;
-  list-style-type:none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  z-index: 10;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.dropdown {
-  overflow:hidden;
-  float:left;
-  
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  
-}
-
     .channels{
       margin: 5px;
       padding-left: 5px;
@@ -174,16 +176,6 @@
       border: 1px solid black;
     }
 
-    .channels button {
-      background-color: inherit;
-      color: white;
-      width: 100%;
-      outline: none;
-      cursor: pointer;
-      transition: 0.3s;
-      font-size: 30px;
-    }
-
     .chat{
       padding-left: 5px;
       padding-right: 5px;
@@ -191,6 +183,7 @@
       width:77vw;
       border:2px solid white;
       overflow-y: scroll;
+      align-items: center;
     }
 
     .message1{
@@ -214,6 +207,7 @@
       background-color:#58b666;
       line-height:20px;
       max-width:90%;
+      contain: content;
       display:inline-block;
       text-align:left;
       border-radius:5px;
@@ -226,7 +220,7 @@
       border-style: solid;
       border-width: 0 8px 8px 8px;
       border-color: transparent
-        transparent #6fbced transparent;
+      transparent #6fbced transparent;
       margin-right:20px;
       float:right;
       clear:both;

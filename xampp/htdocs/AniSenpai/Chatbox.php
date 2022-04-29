@@ -10,36 +10,22 @@ AniSenpai The Greatest Webpage
 
 
 <?php
-session_start();
-if (isset($_POST['submit'])){
-      
-    $link = mysqli_connect("localhost",
-                "root", "", "anisenpai");
-       
-    // Check connection
-    if($link === false){
-        die("ERROR: Could not connect. "
-                . mysqli_connect_error());
+    session_start();
+    if (isset($_POST['global'])) {
+        $_SESSION['channel'] = 0;
     }
-       
-    // Escape user inputs for security
-    $un= $_SESSION["username"];
-    $m = mysqli_real_escape_string(
-            $link, $_REQUEST['Content']);
-    date_default_timezone_set('America/North_Dakota/Center');
-    $ts = date("Y-m-d H:i:s");   
-    // Attempt insert query execution
-    $sql = "INSERT INTO chat (Sender, Content, Created)
-                VALUES ('$un', '$m', '$ts')";
-    if(mysqli_query($link, $sql)){
-        ;
-    } else{
-        echo "ERROR: Message not sent!!!";
+    if (isset($_POST['discussion'])) {
+       $_SESSION['channel'] = 1;
     }
-      
-    // Close connection
-    mysqli_close($link);
-}
+    if (isset($_POST['action'])) {
+       $_SESSION['channel'] = 2;
+       }
+    if (isset($_POST['slice'])) {
+       $_SESSION['channel'] = 3;
+    }
+    if (isset($_POST['fantasy'])) {
+       $_SESSION['channel'] = 4;
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,52 +52,43 @@ if (isset($_POST['submit'])){
     <a href="AnimeList.php">Anime</a>
     <a href="Forum.php">Forum</a>
     <a href='Homepage.php#ads'>Sites</a>
-    <a href="Chatbox.php">Chat</a>
     
     <div class="AniSenpai">
       <li><a href=homepage.php>AniSenpai</a></li>
     </div>
 
+    </div>
 
 
-
-  </div>
     <div id="container">
             <div id="title">
                 <h1 class="title">Weeb Social</h1>
             </div>
             <div class="chatbox">
+            <form action="Chatbox.php" method = "POST">
                 <div class="channels">
                     <h2>Channels</h2>
+                    <br>
                     <ul>
                         <li>
-                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 1</button>
+                            <input name="global" type="submit" value="Global Chat" style="background-color: inherit;width: 100%;outline: none;cursor: pointer;transition: 0.3s;font-size: 30px;color: white;"/>
                         </li>
                         <li>
-                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 2</button>
+                        <input name="discussion" type="submit" value="Discussion Chat" style="background-color: inherit;width: 100%;outline: none;cursor: pointer;transition: 0.3s;font-size: 30px;color: white;"/>
                         </li>
                         <li>
-                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 3</button>
+                        <input name="action" type="submit" value="Action Chat" style="background-color: inherit;width: 100%;outline: none;cursor: pointer;transition: 0.3s;font-size: 30px;color: white;"/>
                         </li>
                         <li>
-                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 4</button>
+                        <input name="slice" type="submit" value="Slice of Life Chat" style="background-color: inherit;width: 100%;outline: none;cursor: pointer;transition: 0.3s;font-size: 30px;color: white;"/>
                         </li>
                         <li>
-                            <button class="tablinks" onclick="openCity(event, 'London')">Channel 5</button>
+                        <input name="fantasy" type="submit" value="Fantasy Chat" style="background-color: inherit;width: 100%;outline: none;cursor: pointer;transition: 0.3s;font-size: 30px;color: white;"/>
                         </li>
                     </ul>
                 </div>
+                </form>
                 <div class="chat">
-                    <script>
-                        function show_func(){
-                        
-                         var element = document.getElementById("chathist");
-                            element.scrollTop = element.scrollHeight;
-                        
-                         }
-                    </script>
-
-                        <form id="myform">
                         <div class="inner_div" id="chathist">
                         <?php
                         $host = "localhost";
@@ -119,56 +96,63 @@ if (isset($_POST['submit'])){
                         $pass = "";
                         $db_name = "anisenpai";
                         $con = new mysqli($host, $user, $pass, $db_name);
+                        $channel = $_SESSION['channel'];
 
                         $query = "SELECT * FROM chat";
                          $run = $con->query($query);
                          $i=0;
-
                          while($row = $run->fetch_array()) :
-                         if($row['Sender'] != $_SESSION['username']){
-                         $i=5;
-                         $first=$row;
-                         ?>
-                         <div id="triangle2" class="triangle2"></div>
-                         <div id="message2" class="message2">
-                         <span style="color:white;float:right;">
-                          <?php echo $row['Content']; ?>
-                         </span> <br/>
-                         <div>
-                          <span style="color:black;float:left;
-                           font-size:10px;clear:both;">
-                           <?php echo $row['Sender']; ?>, <?php echo $row['Created']; ?>
-                         </span>
-                         </div>
-                        </div>
-                        <br/><br/>
-                         <?php
-                         }
-                        else
-                        {
-                        ?>
-                         <div id="triangle1" class="triangle1"></div>
-                         <div id="message1" class="message1">
-                         <span style="color:white;float:left;">
-                         <?php echo $row['Content']; ?></span> <br/>
-                         <div>
-                          <span style="color:black;float:right;
-                                  font-size:10px;clear:both;">
-                           <?php echo $row['Sender']; ?>,
-                                <?php echo $row['Created']; ?>
-                         </span>
-                        </div>
-                        </div>
-                        <br/><br/>
-                        <?php
+                            
+                        if($row["channel"] == $channel){
+                             if($row['Sender'] != $_SESSION['username']){
+                             $i=5;
+                             $first=$row;
+                             ?>
+                             <div id="triangle2" class="triangle2"></div>
+                             <div id="message2" class="message2">
+                            <h3>
+                             <?php echo $row['Sender']; ?>
+                             </h3>
+                             <span style="color:white;float:left;">
+                              <?php echo $row['Content']; ?>
+                             </span> <br/>
+                             <div>
+                              <span style="color:black;float:left;
+                               font-size:10px;clear:both;">
+                               <?php echo $row['Created']; ?>
+                             </span>
+                             </div>
+                            </div>
+                            <br/><br/>
+                             <?php
+                             }
+                            else
+                            {
+                            ?>
+                             <div id="triangle1" class="triangle1"></div>
+                             <div id="message1" class="message1">
+                             <h3>
+                             <?php echo $row['Sender']; ?>
+                             </h3>
+                             <span style="color:white;float:left;">
+                             <?php echo $row['Content']; ?></span> <br/>
+                             <div>
+                              <span style="color:black;float:right;
+                                      font-size:10px;clear:both;">
+                                    <?php echo $row['Created']; ?>
+                             </span>
+                            </div>
+                            </div>
+                            <br/><br/>
+                            <?php
+                            }
                         }
                         endwhile; ?>
                         </div>
-                        </form>
                 </div>
             </div>
             <footer>
-                <form action="Chatbox.php" method = "POST">
+                <form action="chatSubmit.php" method = "POST">
                     <input id="Content" name="Content" type="text" />
                     <input id="submit" name="submit" type="submit" value="Send" />
                 </form>

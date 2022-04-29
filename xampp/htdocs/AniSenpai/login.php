@@ -11,7 +11,6 @@ AniSenpai The Greatest Webpage
 <?php
 // Initialize the session
 session_start();
-
 // Check if the user is already logged in, if yes then redirect him to welcome page
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("location: Homepage.php");
@@ -72,7 +71,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
-
                             // Redirect user to welcome page
                             header("location: Homepage.php");
                         } else {

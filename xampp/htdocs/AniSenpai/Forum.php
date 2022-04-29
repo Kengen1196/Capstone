@@ -22,27 +22,28 @@ AniSenpai The Greatest Webpage
 
 <body>
 
-   <!-- Navigation Bar to go back and forth between the various pages-->
+  <!-- Navigation Bar-->
 
-  
   <div class="navbar">
-    <div class="dropdown">
-      <button class="dropbtn">Profile
+      <div class="dropdown">
+        <button class="dropbtn">Profile
         <i class="fa fa-caret-down"></i>
-      </button>
+        </button>
       <div class="dropdown-content">
         <a href="reset-password.php">Reset Passowrd</a>
         <a href="logout.php">Logout</a>
       </div>
-    <a href="Forum.php">Forum</a>
-    <a href="Homepage.php">Sites</a>
+    </div>
+    <a href="AnimeList.php">Anime</a>
+    <a href='Homepage.php#ads'>Sites</a>
     <a href="Chatbox.php">Chat</a>
     
     <div class="AniSenpai">
-      <li><a href="Homepage.php">AniSenpai</a></li>
+      <li><a href=homepage.php>AniSenpai</a></li>
     </div>
 
   </div>
+
   <div class="border">
 
     <div class="theForum">
