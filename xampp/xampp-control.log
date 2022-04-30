@@ -136,3 +136,50 @@
 4:51:12 PM  [main] 	Deinitializing Modules
 4:51:12 PM  [main] 	Deinitializing Control Panel
 
+8:20:06 PM  [main] 	Initializing Control Panel
+8:20:06 PM  [main] 	Windows Version:  Enterprise  64-bit
+8:20:06 PM  [main] 	XAMPP Version: 8.1.2
+8:20:06 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+8:20:06 PM  [main] 	You are not running with administrator rights! This will work for
+8:20:06 PM  [main] 	most application stuff but whenever you do something with services
+8:20:06 PM  [main] 	there will be a security dialogue or things will break! So think 
+8:20:06 PM  [main] 	about running this application with administrator rights!
+8:20:06 PM  [main] 	XAMPP Installation Directory: "c:\users\kndar\onedrive\documents\github\capstone\xampp\"
+8:20:06 PM  [main] 	Checking for prerequisites
+8:20:06 PM  [main] 	All prerequisites found
+8:20:06 PM  [main] 	Initializing Modules
+8:20:06 PM  [main] 	Starting Check-Timer
+8:20:06 PM  [main] 	Control Panel Ready
+1:39:07 PM  [main] 	Deinitializing Modules
+1:39:07 PM  [main] 	Deinitializing Control Panel
+
+8:01:56 PM  [main] 	Initializing Control Panel
+8:01:56 PM  [main] 	Windows Version:  Enterprise  64-bit
+8:01:56 PM  [main] 	XAMPP Version: 8.1.2
+8:01:56 PM  [main] 	Control Panel Version: 3.3.0  [ Compiled: Apr 6th 2021 ]
+8:01:56 PM  [main] 	You are not running with administrator rights! This will work for
+8:01:56 PM  [main] 	most application stuff but whenever you do something with services
+8:01:56 PM  [main] 	there will be a security dialogue or things will break! So think 
+8:01:56 PM  [main] 	about running this application with administrator rights!
+8:01:56 PM  [main] 	XAMPP Installation Directory: "c:\users\kndar\onedrive\documents\github\capstone\xampp\"
+8:01:56 PM  [main] 	Checking for prerequisites
+8:01:56 PM  [main] 	All prerequisites found
+8:01:56 PM  [main] 	Initializing Modules
+8:01:56 PM  [main] 	Starting Check-Timer
+8:01:56 PM  [main] 	Control Panel Ready
+8:01:59 PM  [Apache] 	Attempting to start Apache app...
+8:01:59 PM  [Apache] 	Status change detected: running
+8:02:00 PM  [mysql] 	Attempting to start MySQL app...
+8:02:00 PM  [mysql] 	Status change detected: running
+8:02:01 PM  [filezilla] 	Attempting to start FileZilla app...
+8:02:02 PM  [filezilla] 	Status change detected: running
+8:19:00 PM  [filezilla] 	Attempting to stop FileZilla app...
+8:19:00 PM  [filezilla] 	Status change detected: stopped
+8:19:00 PM  [mysql] 	Attempting to stop MySQL app...
+8:19:01 PM  [mysql] 	Status change detected: stopped
+8:19:01 PM  [Apache] 	Attempting to stop Apache (PID: 14028)
+8:19:01 PM  [Apache] 	Attempting to stop Apache (PID: 11496)
+8:19:01 PM  [Apache] 	Status change detected: stopped
+1:39:07 PM  [main] 	Deinitializing Modules
+1:39:07 PM  [main] 	Deinitializing Control Panel
+
