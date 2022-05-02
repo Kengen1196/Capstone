@@ -4,28 +4,34 @@ Le Phan
 Ethan Thao
 
 AniSenpai The Greatest Webpage
-
+Reference code from “Online Group Chat Application Using PHP.” GeeksforGeeks, 7 Aug. 2021, https://www.geeksforgeeks.org/online-group-chat-application-using-php/.
 -->
 
 
 
 <?php
-    session_start();
-    if (isset($_POST['global'])) {
-        $_SESSION['channel'] = 0;
-    }
-    if (isset($_POST['discussion'])) {
-       $_SESSION['channel'] = 1;
-    }
-    if (isset($_POST['action'])) {
-       $_SESSION['channel'] = 2;
-       }
-    if (isset($_POST['slice'])) {
-       $_SESSION['channel'] = 3;
-    }
-    if (isset($_POST['fantasy'])) {
-       $_SESSION['channel'] = 4;
-    }
+session_start();
+if (!empty($_POST)){
+if (isset($_POST['global'])) {
+   $_SESSION['channel'] = 0;
+}
+    
+if (isset($_POST['discussion'])) {
+   $_SESSION['channel'] = 1;
+}
+if (isset($_POST['action'])) {
+   $_SESSION['channel'] = 2;
+   }
+if (isset($_POST['slice'])) {
+   $_SESSION['channel'] = 3;
+}
+if (isset($_POST['fantasy'])) {
+   $_SESSION['channel'] = 4;
+}
+}
+else{
+    $_SESSION['channel'] = 0;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,7 +60,7 @@ AniSenpai The Greatest Webpage
     <a href='Homepage.php#ads'>Sites</a>
     
     <div class="AniSenpai">
-      <li><a href=homepage.php>AniSenpai</a></li>
+      <li><a href=Homepage.php>AniSenpai</a></li>
     </div>
 
     </div>
@@ -91,20 +97,17 @@ AniSenpai The Greatest Webpage
                 <div class="chat">
                         <div class="inner_div" id="chathist">
                         <?php
-                        $host = "localhost";
-                        $user = "root";
-                        $pass = "";
-                        $db_name = "anisenpai";
-                        $con = new mysqli($host, $user, $pass, $db_name);
+                        include_once 'config.php';
                         $channel = $_SESSION['channel'];
+                        echo $channel;
 
                         $query = "SELECT * FROM chat";
-                         $run = $con->query($query);
+                         $run = $link->query($query);
                          $i=0;
                          while($row = $run->fetch_array()) :
                             
                         if($row["channel"] == $channel){
-                             if($row['Sender'] != $_SESSION['username']){
+                             if($row['Sender'] != $_SESSION["username"]){
                              $i=5;
                              $first=$row;
                              ?>
@@ -113,7 +116,7 @@ AniSenpai The Greatest Webpage
                             <h3>
                              <?php echo $row['Sender']; ?>
                              </h3>
-                             <span style="color:white;float:left;">
+                             <span style="color:white;float:right;">
                               <?php echo $row['Content']; ?>
                              </span> <br/>
                              <div>

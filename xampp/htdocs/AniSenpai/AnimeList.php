@@ -38,12 +38,12 @@ AniSenpai The Greatest Webpage
     <a href="Chatbox.php">Chat</a>
     
     <div class="AniSenpai">
-      <li><a href=homepage.php>AniSenpai</a></li>
+      <li><a href=Homepage.php>AniSenpai</a></li>
 </div>
   </div>
     <div class="container">
         <?php    
-        $link = mysqli_connect("localhost","root", "", "anisenpai");      
+        include_once 'config.php';
         $query = "SELECT * FROM animelibrary";
         $result = mysqli_query($link, $query);
         ?>
@@ -114,11 +114,11 @@ AniSenpai The Greatest Webpage
                   ?>
                     <select onchange="this.form.submit()" name="status" id="status">
                       <option value="">--</option>
-                      <option value="watching" <?php if(strcmp($watch, 'watching') == 1){ echo "selected";}?>>Watching</option>
-                      <option value="stalled"<?php if(strcmp($watch, 'stalled') == 1){ echo "selected";}?>>Stalled</option>
-                      <option value="completed"<?php if(strcmp($watch, 'completed') == 1){ echo "selected";}?>>Completed</option>
-                      <option value="dropped"<?php if(strcmp($watch, 'dropped') == 1){ echo "selected";}?>>Dropped</option>
-                      <option value="wantToWatch"<?php if(strcmp($watch, 'watToWatch') == 1){ echo "selected";}?>>Want to Watch</option>
+                      <option value="watching" <?php if(strcmp($watch, 'watching') == 0 || strcmp($watch, 'watching') == 0 ){ echo "selected";}?>>Watching</option>
+                      <option value="stalled"<?php if(strcmp($watch, 'stalled') == 0 || strcmp($watch, 'stalled') == 1){ echo "selected";}?>>Stalled</option>
+                      <option value="completed"<?php if(strcmp($watch, 'completed') == 0 || strcmp($watch, 'completed') == 1){ echo "selected";}?>>Completed</option>
+                      <option value="dropped"<?php if(strcmp($watch, 'dropped') == 0 || strcmp($watch, 'dropped') == 1){ echo "selected";}?>>Dropped</option>
+                      <option value="wantToWatch"<?php if(strcmp($watch, 'wantToWatch') == 0 || strcmp($watch, 'wantToWatch') == 1){ echo "selected";}?>>Want to Watch</option>
                     </select>
                     <input type="hidden" name="anime" value="<?php echo $row[0] ?>" />
                   </form>

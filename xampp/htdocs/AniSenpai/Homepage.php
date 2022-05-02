@@ -11,15 +11,9 @@ AniSenpai The Greatest Webpage
 
 
 <?php
-// Initialize the session
 session_start();
-$_SESSION['channel'] = 1;
+$_SESSION['channel'] = 0;
 
-// Check if the user is logged in, if not then redirect him to login page
-if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
-    header("location: login.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -57,7 +51,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <a href="#chat">Chat</a>
     
     <div class="AniSenpai">
-      <li><a href=homepage.php#slideshow>AniSenpai</a></li>
+      <li><a href=Homepage.php#slideshow>AniSenpai</a></li>
     </div>  
   </div>
 

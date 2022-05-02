@@ -1,13 +1,6 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "root";
-
-
-$password = "";
-$dbname = "anisenpai";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+include_once 'config.php';
 
 $score = $_POST['score'];
 $user = $_SESSION['id'];
@@ -22,8 +15,8 @@ if(mysqli_num_rows($result) == 0) {;
     $sql = "UPDATE watchlist SET score='$score' WHERE anime='$anime'";
 }
 
-mysqli_query($conn, $sql);
+mysqli_query($link, $sql);
 
 /* Header code that brings the user back to the form page */
-header("Location:  ./animeList.php");
+header("Location: https://anisenpai.000webhostapp.com/AnimeList.php");
 ?>

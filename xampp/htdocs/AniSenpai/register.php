@@ -6,6 +6,7 @@ Ethan Thao
 
 AniSenpai The Greatest Webpage
 
+sourced from: https://www.tutorialrepublic.com/php-tutorial/php-mysql-login-system.php
 -->
 
 
@@ -91,7 +92,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Attempt to execute the prepared statement
             if (mysqli_stmt_execute($stmt)) {
                 // Redirect to login page
-                header("location: login.php");
+    header("Location: https://anisenpai.000webhostapp.com/login.php");
             } else {
                 echo "Oops! Something went wrong. Please try again later.";
             }
